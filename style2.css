@@ -11,7 +11,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 main {
   flex-grow: 1;
@@ -23,6 +23,7 @@ header {
   justify-content: center;
   justify-content: space-around;
   background-color: rgb(249, 242, 233);
+    animation: opacity 5s ease-in-out;
 }
 
 nav {
@@ -47,6 +48,7 @@ nav a {
 .image_home {
   object-fit: cover;
   position: relative;
+  animation: opacity 5s ease-in;
 }
 
 .h1_home {
@@ -54,8 +56,9 @@ nav a {
   position: absolute;
   font-size: 34px;
   left: 140px;
-  top: 150px;
+  top: 250px;
   padding: 20px;
+    animation: opacity 5s ease-in;
 }
 
 footer {
@@ -65,4 +68,13 @@ footer {
   justify-content: space-around;
   background-color: antiquewhite;
   height: 200px;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

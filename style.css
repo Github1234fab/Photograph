@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     filter:saturate(1) ;
+       background: linear-gradient(30deg, #1e021b 10%, #10030f 100%);
 }
 .lens_out {
     display: flex;
@@ -47,7 +48,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background: linear-gradient(73deg, #390833 10%, #20051d 100%);
+    background: linear-gradient(73deg, #1c0419 10%, #20051d 100%);
     border-radius: 50%;
     height: 125px;
     width: 125px;
@@ -94,7 +95,8 @@
 
 .fade_in {
     color: white;
-    letter-spacing: 1.2em;
+    letter-spacing: 0.6em;
+    word-spacing: 0.3em;
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 16px;
