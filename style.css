@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  lato;
+}
+.container {
+    background-color: #170316;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter:saturate(1) ;
+}
+.lens_out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(73deg, #0a0109 10%, #20051d 100%);
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
+    box-shadow: 1px 1px 4px 1px grey inset;
+    animation: rotating 20s linear infinite;
+    transition: 4s;
+}
+.lens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(73deg, #0a0109 10%, #20051d 100%);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    box-shadow: 1px 1px 4px 1px grey inset;
+    animation: rotating 330s linear infinite;
+    border: groove 8px #390833;
+    transition: 3s;
+}
+
+.lens_in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(73deg, #390833 10%, #20051d 100%);
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    box-shadow: 1px 1px 4px 1px grey inset;
+    animation: rotating 440s linear infinite;
+    border: outset 8px #390833;
+    transition: 2s;
+}
+.lens_out:hover,
+.lens_in:hover,
+.lens:hover {
+    border-radius: 10%;
+    animation: rotating 0s;
+}
+
+.txt {
+    font-family: lato;
+    font-size: 16px;
+    text-overflow: clip;
+}
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.txt {
+    font-family: lato;
+    font-size: 16px;
+    text-overflow: clip;
+}
+
+.txt {
+    font-family: lato;
+    font-size: 16px;
+    text-overflow: clip;
+}
+
+.container_h1 {
+    visibility: hidden;
+}
+
+.fade_in {
+    color: white;
+    letter-spacing: 1.2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 16px;
+    visibility: visible;
+    animation: opacity 9s ease-out;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    padding: 20px;
+    box-shadow: 1px 1px 4px 1px grey inset;
+    margin-top: 30px;
+    visibility: hidden;
+   
+}
+
+.buttonActive {
+    visibility: visible;
+     animation: opacity 9s ease-in;
+     transition: 2s;
+}
+.buttonActive:hover{
+    transform: scale(1.3);
+}
