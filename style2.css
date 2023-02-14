@@ -2,63 +2,55 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  background: linear-gradient(56deg, rgb(28, 1, 1) 40%, rgb(41, 1, 1) 60%);
   font-family: poppins;
 }
-html,
-body {
-  height: 100%;
-}
-body {
+header {
+  height: 100vh;
+  background-color: rgb(249, 242, 233);
+  animation: opacity 5s ease-in-out;
+  background-image: url("./assets/NYC\ reflet\ 2.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
-}
-main {
-  flex-grow: 1;
-}
-header {
-  height: 200px;
-  display: flex;
   align-items: center;
+}
+
+.container_nav {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  justify-content: space-around;
-  background-color: rgb(249, 242, 233);
-    animation: opacity 5s ease-in-out;
+  align-items: center;
 }
 
 nav {
+  width: 400px;
   display: flex;
-  text-decoration-style: none;
-  justify-content: space-around;
-  width: 90%;
-  text-align: center;
+  justify-content:space-around;
 }
-
 nav a {
   text-decoration: none;
   color: rgb(35, 3, 25);
   font-size: 14px;
+  transition: 1s ease-out;
 }
-
-.container_img {
-  display: flex;
-  flex-direction: column;
-}
-
-.image_home {
-  object-fit: cover;
-  position: relative;
-  animation: opacity 5s ease-in;
+nav a:hover {
+  opacity: 0.7;
+  color: rgb(249, 242, 233);
 }
 
 .h1_home {
+  color: white;
+  text-align: center;
+  margin-top: 67px;
   font-size: 30px;
-  position: absolute;
-  font-size: 34px;
-  left: 140px;
-  top: 250px;
   padding: 20px;
-    animation: opacity 5s ease-in;
+  animation: opacity 5s ease-in;
 }
 
 footer {
@@ -67,14 +59,14 @@ footer {
   justify-content: center;
   justify-content: space-around;
   background-color: antiquewhite;
-  height: 200px;
+  height: 100px;
 }
 
 @keyframes opacity {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
